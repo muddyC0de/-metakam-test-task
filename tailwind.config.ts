@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        lato: ["var(--font-lato)"],
+        inter: ["var(--font-inter)"],
+      },
     },
   },
   plugins: [],
