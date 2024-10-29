@@ -16,7 +16,7 @@ export const Slider: React.FC<Props> = ({ color }) => {
   return (
     <Swiper
       modules={[Pagination, Navigation]}
-      className="w-[500px] rounded-lg "
+      className="w-[370px] sm:w-[500px] rounded-lg lg:w-[2000px]"
       spaceBetween={10} // расстояние между слайдами
       slidesPerView={1} // количество слайдов, видимых одновременно
       navigation

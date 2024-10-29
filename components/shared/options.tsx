@@ -26,7 +26,7 @@ const sneakersPreview = [
 
 export const Options: React.FC<Props> = ({ onChangeColor, className }) => {
   return (
-    <div className={className}>
+    <Box className={className}>
       <Box className="mb-4">
         <Text weight={"bold"}>Розмір:</Text>
         <RadioCards.Root
@@ -36,17 +36,23 @@ export const Options: React.FC<Props> = ({ onChangeColor, className }) => {
         >
           <RadioCards.Item value="1">
             <Flex direction="column" width="100%">
-              <Text weight="bold">43</Text>
+              <Text weight="bold" className="lg:text-center">
+                43
+              </Text>
             </Flex>
           </RadioCards.Item>
           <RadioCards.Item value="2">
             <Flex direction="column" width="100%">
-              <Text weight="bold">45</Text>
+              <Text weight="bold" className="lg:text-center">
+                45
+              </Text>
             </Flex>
           </RadioCards.Item>
           <RadioCards.Item value="3">
             <Flex direction="column" width="100%">
-              <Text weight="bold">46</Text>
+              <Text weight="bold" className="lg:text-center">
+                46
+              </Text>
             </Flex>
           </RadioCards.Item>
         </RadioCards.Root>
@@ -70,9 +76,9 @@ export const Options: React.FC<Props> = ({ onChangeColor, className }) => {
             >
               <Flex direction="column" width="100%">
                 <Image
-                  className="absolute -top-5 left-14"
-                  width={80}
-                  height={80}
+                  className="absolute inset-0 m-auto"
+                  width={100}
+                  height={100}
                   src={item.img}
                   alt={"sneaker"}
                 />
@@ -81,6 +87,6 @@ export const Options: React.FC<Props> = ({ onChangeColor, className }) => {
           ))}
         </RadioCards.Root>
       </Box>
-    </div>
+    </Box>
   );
 };

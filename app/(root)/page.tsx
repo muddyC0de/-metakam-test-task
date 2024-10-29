@@ -41,20 +41,19 @@ export default function Home() {
     <Container>
       <Flex
         gap={"9"}
-        className="sm:flex-col sm:items-center sm:px-2 md:px-0 md:items-start lg:flex lg:items-start lg:px-0 lg:flex-row"
+        className="flex-col   px-2   lg:flex lg:items-start lg:px-0 lg:flex-row"
       >
         <Slider color={selectedColor} />
-        <Flex
-          width={"700px"}
-          className="sm:px-2"
-          direction={"column"}
-          gap={"4"}
-        >
-          <Heading wrap={"wrap"} size={"7"} className="font-inter">
+        <Flex direction={"column"} gap={"4"}>
+          <Heading
+            wrap={"wrap"}
+            size={"7"}
+            className="font-inter text-3xl md:text-2xl lg:text-4xl"
+          >
             Баскетбольні кросівки Ja 1
           </Heading>
           <Text
-            className="font-inter text-wrap sm:text-lg sm:w-[600px]"
+            className="font-inter inline-block text-lg w-full md:text-base md:w-[80%] lg:text-xl lg:w-full"
             color="gray"
           >
             Джа Морант став суперзіркою, якою він є сьогодні, неодноразово
@@ -65,7 +64,6 @@ export default function Home() {
             комфорту, щоб ви могли контролювати власну долю на майданчику, як це
             робить Джа.
           </Text>
-
           <Options onChangeColor={onChangeColor} />
 
           <Button size={"3"} variant="soft" className="w-full">
@@ -75,11 +73,11 @@ export default function Home() {
       </Flex>
 
       <Box className="mt-20">
-        <Heading weight={"medium"} size={"5"} className="font-inter">
+        <Heading weight={"medium"} size={"5"} className="font-inter px-2">
           Рекомендації
         </Heading>
 
-        <Flex className="mt-5 mb-5 sm:flex-col lg:flex-row" gap={"8"}>
+        <Flex className="mt-5 mb-5 px-2 flex-col lg:flex-row" gap={"8"}>
           {recomandations.map((recomandation) => (
             <RecomandationCard
               key={recomandation.title}

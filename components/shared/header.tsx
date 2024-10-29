@@ -12,7 +12,7 @@ export const Header: React.FC<Props> = ({ className }) => {
     <header
       className={clsx(
         className,
-        "flex items-center justify-between py-7 border-b border-gray-200 mb-16"
+        "flex px-2 items-center justify-between py-7 border-b border-gray-200 mb-16"
       )}
     >
       <Container>
